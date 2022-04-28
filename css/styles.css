@@ -1,0 +1,228 @@
+:root {
+    --primary-bg-color:#2F303A;
+    --primary-text-color:#212121;
+    --title-text-color:#757575;
+    --accent-color: #2196F3;
+    --btn-hover:#188CE8;
+    --spec-color: #fff;
+    --fh-bg-color: #2F303A;
+    --color-footer:rgba(255, 255, 255, 0.6);
+    --bg-color-button: #F5F4FA;
+}
+
+body {
+    font-family: Roboto, sans-serif;
+    color: var(--title-text-color);
+    letter-spacing: 0.03em;
+}
+
+
+a {
+    text-decoration: none;
+}
+
+/* Головна сторінка */
+
+.list {
+    list-style: none;
+}
+
+.logo {
+    font-family: 'Raleway', sans-serif;
+    font-weight: 700;
+    font-size: 26px;
+    line-height: 1.19;
+    color: var(--accent-color);
+}
+
+.logo .head {
+    color: var(--primary-text-color);
+}
+
+/* Site navigation*/
+.site-nav .link{
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 1.14;
+    letter-spacing: 0.02em;
+    color: var(--primary-text-color);
+}
+
+.site-nav .link:hover,
+.site-nav .link:focus {
+    color: var(--accent-color);
+}
+.site-nav .link.current  {
+    color: var(--accent-color);
+}
+
+/* Header contacts*/
+.cont-nav .cont {
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 1.14;
+    letter-spacing: 0.02em;
+    color: var(--title-text-color);
+}
+
+.cont-nav .cont:hover,
+.cont-nav .cont:focus {
+    color: var(--accent-color);
+}
+
+/* Hero */
+.section-main {
+    background-color: var(--primary-bg-color);
+}
+
+.section-main .title {
+    font-weight: 900;
+    font-size: 44px;
+    line-height: 1.36;
+    text-align: center;
+    letter-spacing: 0.06em;
+    text-transform: uppercase;
+    color: var(--spec-color);
+}
+
+.button {
+    font-family: inherit;
+    background-color: var(--accent-color);
+    color: var(--spec-color);
+    cursor: pointer;
+}
+
+.button:hover {
+    background-color:var(--btn-hover);
+}
+
+.section-main .button {
+    font-family: Roboto, sans-serif;
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 1.88;
+    display: flex;
+    align-items: center;
+    text-align: center;
+    letter-spacing: 0.06em;
+}
+
+/* Section  */
+/* Ховає заголовок h2 "Наши особенности" */
+.visually-hidden {
+        position: absolute;
+        white-space: nowrap;
+        width: 1px;
+        height: 1px;
+        overflow: hidden;
+        border: 0;
+        padding: 0;
+        clip: rect(0 0 0 0);
+        clip-path: inset(50%);
+        margin: -1px;
+    }
+
+.section-title {
+    font-weight: 700;
+    font-size: 36px;
+    line-height: 1.17;
+    text-align: center;
+    letter-spacing: 0.03em;
+    color: var(--primary-text-color);
+}
+
+/* Specifics */
+.specifics .title {
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 1.14;
+    color: var(--primary-text-color);
+    text-transform: uppercase;
+}
+.specifics .text {
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 1.71;
+    letter-spacing: 0.03em;
+    color: var(--title-text-color);
+}
+
+/* team */
+.team .title {
+    
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 1.19;
+    color: var(--primary-text-color);
+}
+
+.team .text {
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 1.19;
+}
+
+
+/* Footer */
+.logo .footer {
+    color: var(--spec-color);
+}
+.footermain {
+    background-color: var(--primary-bg-color);
+}
+
+.address {
+    font-family: 'Roboto', sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 14px;
+    line-height: 1.7;
+    color: var(--spec-color);
+}
+.list .info {
+    color: var(--color-footer);
+}
+
+.list .info:hover,
+.list .info:focus {
+    color: var(--accent-color);
+}
+
+/* Portfolio */
+/* buttons */
+
+.filter .button {   
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 1.62;
+    text-align: center;
+    background-color: var(--bg-color-button);
+    color: var(--primary-text-color);
+    border: 0;
+    margin: 2px;
+    border-radius: 4px;
+}
+
+.container {
+    display: inline;
+}
+
+.filter .button:hover,
+.filter .button:focus {
+    background-color: var(--accent-color);
+}
+
+/* list project */
+.list .titles {
+    font-weight: 700;
+    font-size: 18px;
+    line-height: 2;
+    letter-spacing: 0.06em;
+    color: var(--primary-text-color);
+}
+.description {
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 1.9;
+    color: var(--title-text-color);
+}
