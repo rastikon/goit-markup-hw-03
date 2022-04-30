@@ -204,8 +204,11 @@ h1, h2, h3, h4, h5, h6, p, ul {
 /* Specifics */
 .specifics {
     display: flex;
-    justify-content: center;
+    justify-content: space-between;
 }
+/* .specifics .item:not(:last-child) {
+    margin-right: 30px;
+} */
 
 .specifics .item {
     width: 270px;
@@ -230,10 +233,13 @@ h1, h2, h3, h4, h5, h6, p, ul {
 .doing {
     display: flex;
 }
-
-.list > .item:not(:last-child) {
+.doing .item.item:not(:last-child) {
     margin-right: 30px;
 }
+
+/* .list > .item:not(:last-child) {
+    margin-right: 30px;
+} */
 
 /* team */
 .team {
@@ -241,6 +247,10 @@ h1, h2, h3, h4, h5, h6, p, ul {
 }
 .team .item {
     text-align: center;
+}
+
+.team .item.item:not(:last-child) {
+    margin-right: 30px;
 }
 
 .team .title {
