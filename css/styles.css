@@ -27,6 +27,7 @@ h1, h2, h3, h4, h5, h6, p, ul {
 
 
 /* Головна сторінка */
+/* Основні параметри контейнера */
 .container {
     width: 1200px;
     margin-left: auto;
@@ -38,11 +39,13 @@ h1, h2, h3, h4, h5, h6, p, ul {
     outline: 2px solid tomato;
 }
 
+/* Прибирає паддінги */
 .no-padding {
     padding-top: 0;
     padding-bottom: 0;
 }
 
+/* Прибирає стилі */
 .list {
     list-style: none;
     padding-left: 0;
@@ -62,7 +65,29 @@ h1, h2, h3, h4, h5, h6, p, ul {
 
 /* Site navigation*/
 
+.main-header {
+    display: flex;
+    align-items: center;
+}
+
+.site-nav {
+    display: flex;
+    margin-left: 93px;
+}
+/* .site-nav .item{
+    outline: 1px solid red;
+    background-color: tomato;
+} */
+
+.site-nav .item:not(:last-child) {
+    margin-right: 50px;
+}
+
 .site-nav .link{
+    display: block;
+    padding-top: 32px;
+    padding-bottom: 32px; 
+
     font-weight: 500;
     font-size: 14px;
     line-height: 1.14;
@@ -79,6 +104,16 @@ h1, h2, h3, h4, h5, h6, p, ul {
 }
 
 /* Header contacts*/
+.cont-nav {
+    display: flex;
+    margin-left: auto;
+}
+
+/* Відступ між контактами */
+.cont-nav .item + .item {
+    margin-left: 50px;
+}
+
 .cont-nav .cont {
     font-weight: 500;
     font-size: 14px;
@@ -167,6 +202,14 @@ h1, h2, h3, h4, h5, h6, p, ul {
 }
 
 /* Specifics */
+.specifics {
+    display: flex;
+    justify-content: center;
+}
+
+.specifics .item {
+    width: 270px;
+}
 .specifics .title {
     margin-bottom: 10px;
     font-weight: 700;
@@ -183,7 +226,23 @@ h1, h2, h3, h4, h5, h6, p, ul {
     color: var(--title-text-color);
 }
 
+/* Чим ми займаємся */
+.doing {
+    display: flex;
+}
+
+.list > .item:not(:last-child) {
+    margin-right: 30px;
+}
+
 /* team */
+.team {
+    display: flex;
+}
+.team .item {
+    text-align: center;
+}
+
 .team .title {
     margin-top: 30px;
     margin-bottom: 10px;
